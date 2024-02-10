@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Arial';
+        }
+        .master-section{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            width: 25vw;
+            height: 80vh;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .top{
+            width: 100%;
+            height: 80%;
+            border: 1px solid rgb(219 219 219);
+            border-radius: 1px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            /*padding: 15px;*/
+        }
+        .bottom{
+            width: 100%;
+            height: 15%;
+            /*border: 0.3px solid black;*/
+            border: 1px solid rgb(219 219 219);
+            border-radius: 1px;
+            /*border-radius: 1px;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: darkblue;
+        }
+        button{
+            width: 78%;
+            height: 10%;
+            font-size: 16px;
+            background-color: lightskyblue;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            margin: 10px 0 0 0;
+        }
+        input{
+            width: 76%;
+            height: 10%;
+            border: 1px solid rgb(219 219 219);
+            margin: 3px;
+            border-radius: 3px;
+            text-overflow: ellipsis;
+        }
+        .top img{
+            width: 60%;
+            height: 15%;
+            margin: 45px 0;
+        }
+        .facebook img{
+            width: 10%;
+            height: 80%;
+            margin: 0;
+        }
+        .facebook{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin: 0;
+        }
+        h5{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+<section class="master-section">
+    <form>
+        <div class="top">
+            <img src="Instagram-logo.svg" alt="#">
+            <input type="text" name="username" placeholder="Номер телефону, ім'я коростивуча або ел. пошті">
+            <input type="password" name="password" placeholder="Пароль">
+            <button><b>Увійти</b></button>
+            <h5>АБО</h5>
+            <div class="facebook">
+                <img src="icons8-facebook-48.png" alt="#">
+                <span><a href="#"> <b>Увійти через Facebook</b></a></span>
+            </div>
+            <p style="font-size: 12px"><a href="#">Забули пароль?</a></p>
+        </div>
+        <div class="bottom">
+            <p style="font-size: 15px">Не маєте облікового запису?<a href="#"> <b style="color: cornflowerblue">Зареєструйтеся</b></a></p>
+        </div>
+    </form>
+</section>
+</body>
+</html>
